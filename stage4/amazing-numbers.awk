@@ -37,13 +37,14 @@ function buzz(number) {
     return number % 7 == 0 || number % 10 == 7
 }
 function duck(number) {
-    return number ~ /0/
+    return +number ~ /0/
 }
-function palindromic(number,   command,reverse) {
-    command = "rev <<< " number
-    command | getline reverse
-    close(command)
-    return number == reverse
+function palindromic(number,   len,i) {
+    len = length(number)
+    for (i = (len - len % 2) / 2; i > 0; --i)
+        if (substr(number, i, 1) != substr(number, len + 1 - i, 1))
+            return 0
+    return 1
 }
 function gapful(number,   divider) {
     if (length(number) != 3) return 0
