@@ -1,0 +1,22 @@
+= Spy numbers
+
+== Description
+
+In this stage, we will add another property that is called a *Spy number*. A number is said to be Spy if the sum of all digits is equal to the product of all digits.
+
+Our program calculates the properties of numbers, and also knows how to process a list of numbers. But what if we want to find numbers that have a certain property? For example, in case we want to find ten Buzz numbers starting from 1000. We need to add a new request feature for this. In addition, add a new property — Spy numbers. These numbers hide well, so beware. Your task is to modify the program so that it can search for these numbers.
+
+== Objectives
+
+Your program should process the user requests. In this stage, your program should:
+
+1. Welcome users;
+2. Display the instructions;
+3. Ask for a request;
+4. If a user enters zero, terminate the program;
+5. If numbers are not natural, print an error message;
+6. If a user inputs an incorrect property, print the error message and the list of available properties;
+7. For one number, print the properties of the number;
+8. For two numbers, print the list of numbers with their properties;
+9. For two numbers and a property, print the list of numbers and their properties filtered by the indicated property;
+10. Once a request is processed, continue execution from step 3.
